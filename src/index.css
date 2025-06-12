@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg-dark: #7cb9e8;
+  --color-bg-light: #a3d4fa;
+}
+
+body {
+  @apply text-white;
+}
+
+button {
+  @apply hover:cursor-pointer;
+}
+
+.apexcharts-text * {
+  fill: white !important;
+  font-weight: bold;
+  color: white !important;
+}
+
+.apexcharts-tooltip {
+  color: black !important;
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
