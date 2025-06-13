@@ -53,7 +53,7 @@ export default function CitySelectorModal({
         </label>
         <div className="w-full max-w-md">
           <Select
-            className="text-black min-w-sm shadow-md"
+            className="text-black shadow-md"
             options={computedOptions}
             placeholder={initialValue}
             onChange={handleCitySelect}
