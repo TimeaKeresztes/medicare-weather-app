@@ -23,8 +23,11 @@ export default function ForecastPanel() {
 
   return (
     <div className="flex flex-col gap-2 lg:gap-4 w-full lg:mx-8">
-      {upcomingWeekData.map(d => (
-        <div className="grid grid-cols-3 p-2 mb-2 rounded-md bg-white/10 hover:bg-white/20">
+      {upcomingWeekData.map((d, index) => (
+        <div
+          key={index}
+          className="grid grid-cols-3 p-2 mb-2 rounded-md bg-white/10 hover:bg-white/20"
+        >
           <p>{dateStringToWeekDay(d.time, 'long')}</p>
           <div className="flex items-center justify-center gap-2 text-sm text-white">
             <span>
